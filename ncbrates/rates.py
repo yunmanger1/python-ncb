@@ -22,7 +22,7 @@ def in_kzt(amount = 1):
     if not rates.has_key('RUB'):
         get_rates()
     rate, date, n = rates.get('RUB')
-    return amount * rate 
+    return float(amount) * rate 
 
 def get_rate(curr):
     if not rates.has_key(curr):
